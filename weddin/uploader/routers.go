@@ -29,7 +29,6 @@ func Upload(c *gin.Context) {
 
 	out, err := os.Create("upload_files/" + header.Filename)
 	defer out.Close()
-	io.Copy(out, file)
 	if _, err := io.Copy(out, file); err != nil {
 		c.String(http.StatusCreated, "upload fail")
 	}
