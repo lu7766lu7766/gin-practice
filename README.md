@@ -14,7 +14,7 @@ cd $GOPATH/src/github.com/gin-practice/
 go run main.go
 
 
-
+---------------------------------------------------
 
 
 git clone https://github.com/wediin/gin-practice.git
